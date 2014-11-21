@@ -1,5 +1,5 @@
 {
-    "include": "centos-atomic-base.json",
+    "include": "centos-atomic-expanded-base.json",
 
     "ref": "centos/7/atomic/x86_64/cloud-docker-host",
 
@@ -8,6 +8,6 @@
                  "sysstat", "policycoreutils-python", "setools-console", "docker",
                  "audit", "cloud-init", "geard", "cloud-utils-growpart" ],
 
-    "units": ["docker.service"]
+    "units": ["docker.service"],
     "default_target": "multi-user.target"
 }

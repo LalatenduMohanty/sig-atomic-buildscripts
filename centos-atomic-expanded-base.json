@@ -1,0 +1,42 @@
+{
+    "comment": "CentOS 7 Base Atomic Defs",
+
+    "osname": "centos-atomic",
+    "ref": "centos/7/atomic/x86_64/base",
+    
+    "repos": ["base", "updates," "extras," "rpm-ostree", "epel"],
+
+    "selinux": true,
+
+    "bootstrap_packages": ["filesystem", "glibc", "nss-altfiles", "shadow-utils",
+                           "centos-release", "kernel", "rpm-ostree", "lvm2"],
+
+    "packages": ["systemd", "kernel",
+                 "lvm2",
+                 "grub2", "grub2-efi", "ostree-grub2",
+                 "efibootmgr", "shim",
+                 "btrfs-progs", "e2fsprogs", "xfsprogs",
+                 "mdadm",
+                 "docker",
+                 "selinux-policy-targeted",
+                 "audit",
+                 "sssd",
+                 "cloud-init",
+                 "cloud-utils-growpart",
+                 "tar",
+                 "bridge-utils",
+                 "nfs-utils",
+                 "openssh-server", "openssh-clients",
+                 "passwd",
+                 "NetworkManager", "vim-minimal", "nano",
+                 "sudo",
+                 "tuned",
+                 "irqbalance",
+                 "man-db", "man-pages", "bash-completion",
+                 "rsync", "tmux",
+                 "net-tools", "nmap-ncat",
+                 "bind-utils", "git",
+                 "sysstat",
+                 "policycoreutils-python",
+                 "setools-console"]
+}

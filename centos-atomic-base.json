@@ -11,9 +11,10 @@
     "bootstrap_packages": ["filesystem", "glibc", "nss-altfiles", "shadow-utils",
                            "centos-release", "kernel", "rpm-ostree", "lvm2"],
 
-    "packages": ["syslinux-extlinux", "e2fsprogs", "xfsprogs",
+    "packages": ["lvm2", "grub2", "grub2-efi", "ostree-grub2",
+                 "efibootmgr", "shim", "e2fsprogs", "xfsprogs",
                  "selinux-policy-targeted", "audit",
                  "openssh-server", "openssh-clients", "sudo",
-                 "passwd", "NetworkManager", "vim-minimal"],
+                 "passwd", "NetworkManager", "vim-minimal"]
 
 }
